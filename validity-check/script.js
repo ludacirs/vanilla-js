@@ -21,14 +21,13 @@
         elem.parentNode.childNodes[5].style.visibility = 'visible';
     }
 
-    function valueCheck(u, email, pn, p1, p2) {
-        let result = false;
-        if(!(u.value && email.value && pn.value && p1.value && p2.value)){
-        } else result = true;
-
-        return result;
+    function valueCheck(array) {
+        array.forEach(function (elem){
+            if(!elem.value){
+                fail(elem,'fail');
+            }
+        });
     }
-
     function lengthCheck(u, pn, p1) {
         //4글자 이상 10글지 이하 검사
         if(!(u.value.length>=4&&u.value.length<=10)){
@@ -78,24 +77,22 @@
         e.preventDefault();
 
         //모든 input 들의 값이 입력되었는지 확인
-        if(valueCheck(username, email, phone_number, password, password_check)){
+        valueCheck([username, email, phone_number, password, password_check]);
 
-            //길이 확인
-            lengthCheck(username,phone_number,password);
+        //길이 확인
+        lengthCheck(username, phone_number, password);
 
-            //이메일 확인
-            emailCheck(email);
+        //이메일 확인
+        emailCheck(email);
 
-            //번호 확인
-            phoneNumberCheck(phone_number);
-            //비밀번호 동일 확인
-            passwordSame(password,password_check);
+        //번호 확인
+        phoneNumberCheck(phone_number);
+        //비밀번호 동일 확인
+        passwordSame(password, password_check);
 
-
-        }else {
-            console.log('모든 값을 입력해');
-        }
 
     }
+
+
     formElem.addEventListener('submit',submitHandler);
 })();
