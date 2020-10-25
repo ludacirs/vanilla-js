@@ -10,7 +10,26 @@ body {
     padding: 0;
     background: #f7f7f7;
 }
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+small {
+    position: relative;
+    top: 2em;
+    right: 0.5em;
+    font-size: 12px;
+}
+
+
+.price{
+    display: inline;
+    position: relative;
+}
+
 .container {
+    position: relative;
     margin: 20px;
     width: 400px;
     height: 600px;
@@ -20,6 +39,7 @@ body {
     background: #f6fdff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .nav{
     padding-bottom: 25px;
@@ -32,25 +52,42 @@ select {
     appearance: none;
 
 }
-
 .info {
     padding-bottom: 60px;
 }
 
-.seats {
-}
 
 .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     margin-bottom: 25px;
     justify-items: center;
 }
 
 .seat {
+    position: relative;
     width: 40px;
     height: 30px;
     background: #797979;
     border-radius: 50% 50% 0 0;
+
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.selected {
+    background: #9ec9f1;
+}
+
+.occupied {
+    background: #ff0000bf;
+}
+
+
+span {
+    display: block;
+    padding-top: 6px;
 }

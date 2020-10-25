@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>seat-reservation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?ver=2">
 </head>
 <body>
 <div class="container">
@@ -15,54 +15,111 @@
         </select>
         </label>
     </div>
-    <div class="info">현재 n 호차 잔여 n 석/ 전체 n석 </div>
 
-    <div class="seats">
+    <div class="price"> 0원</div>
 
+    <div class="info"><small>현재 n호차 잔여 n 석/ 전체 n석</small> </div>
+
+    <section class="seats">
 
         <div class="row a">
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>A1</span>
+            </div>
+            <div class="seat">
+                <span>A2</span>
+            </div>
             <div class="way"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>A3</span>
+            </div>
+            <div class="seat occupied">
+                <span>A4</span>
+            </div>
         </div>
 
         <div class="row b">
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat occupied">
+                <span>B1</span>
+            </div>
+            <div class="seat">
+                <span>B2</span>
+
+            </div>
             <div class="way"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>B3</span>
+
+            </div>
+            <div class="seat">
+                <span>B4</span>
+
+            </div>
         </div>
 
         <div class="row c">
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>C1</span>
+
+            </div>
+            <div class="seat">
+                <span>C2</span>
+
+            </div>
             <div class="way"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>C3</span>
+
+            </div>
+            <div class="seat">
+                <span>C4</span>
+
+            </div>
         </div>
 
         <div class="row d">
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>D1</span>
+
+            </div>
+            <div class="seat">
+                <span>D2</span>
+
+            </div>
             <div class="way"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>D3</span>
+
+            </div>
+            <div class="seat occupied">
+                <span>D4</span>
+
+            </div>
         </div>
 
         <div class="row e">
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>E1</span>
+
+            </div>
+            <div class="seat">
+                <span>E2</span>
+
+            </div>
             <div class="way"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat">
+                <span>E3</span>
+
+            </div>
+            <div class="seat">
+                <span>E4</span>
+
+            </div>
         </div>
-    </div>
+    </section>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?ver=1"></script>
 </body>
 
 </html>
