@@ -2,4 +2,5 @@
 
 1. validity-check
 2. seat-reservation
-3. 
+3. exchange-rate
+4. modal & slider
