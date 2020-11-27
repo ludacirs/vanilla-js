@@ -13,6 +13,10 @@ body{
     margin: 0;
     width: 100vw;
     height: 100vh;
+    transition: 2s;
+}
+.body-move{
+    transform: translateX(20vw);
 }
 .title-container{
     width: 100vw;
@@ -70,15 +74,15 @@ body{
     padding: 20px;
 }
 .sidebar{
-    display: none;
+    display: block;
     width: 20vw;
     height: 100vh;
     position: absolute;
-    left :0;
+    left : 0;
     top: 0;
     background-color: rgba(237 ,238 ,241, 0.7);
     box-shadow: 0 0 8px 1px #737171;
-
+    transform: translateX(-20vw);
 }
 .side-title-container{
     width: 100%;
