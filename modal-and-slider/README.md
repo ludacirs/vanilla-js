@@ -5,8 +5,8 @@
 
 # 명세
 
-- [ ] html 마크업 작성
-- [ ] modal css 구현
-- [ ] side bar css 구현
-- [ ] modal clickHandler 구현
-- [ ] side bar clickHandler 구현
+- [x] html 마크업 작성
+- [x] modal css 구현
+- [x] side bar css 구현
+- [x] modal clickHandler 구현
+- [x] side bar clickHandler 구현
