@@ -4,3 +4,5 @@
 2. seat-reservation
 3. exchange-rate
 4. modal-and-slider
+5. silly-story-generator
+6. simple-component
