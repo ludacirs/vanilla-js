@@ -6,3 +6,4 @@
 4. modal-and-slider
 5. silly-story-generator
 6. simple-component
+7. js-router
